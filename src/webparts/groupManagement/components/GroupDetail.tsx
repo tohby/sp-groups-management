@@ -6,6 +6,8 @@ import {
   CompactPeoplePicker,
   DefaultButton,
   IPersonaProps,
+  MessageBar,
+  MessageBarType,
   Overlay,
   PrimaryButton,
   Spinner,
@@ -23,6 +25,10 @@ const GroupDetail: React.FC<IGroupDetailProps> = ({ groupId }) => {
   const [groupMembers, setGroupMembers] = useState<any>([]);
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const [selectedUsers, setSelectedUsers] = useState<IPersonaProps[]>([]);
+  const [message, setMessage] = useState<{
+    type: "success" | "error";
+    text: string;
+  } | null>(null);
   const fetchGroupDetail = async () => {
     const [response, members] = await Promise.all([
       sp.web.siteGroups.getById(groupId).get(),
@@ -122,6 +128,18 @@ const GroupDetail: React.FC<IGroupDetailProps> = ({ groupId }) => {
           onClick={addUsersToGroup}
         />
       </Stack>
+      {message && (
+        <MessageBar
+          messageBarType={
+            message.type === "success"
+              ? MessageBarType.success
+              : MessageBarType.error
+          }
+          onDismiss={() => setMessage(null)}
+        >
+          {message.text}
+        </MessageBar>
+      )}
       {groupMembers.length > 0 ? (
         <div className={styles.membersList}>
           {groupMembers.map((member: any) => (
