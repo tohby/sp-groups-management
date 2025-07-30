@@ -1,0 +1,26 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+:global {
+  .CanvasZone div {
+    max-width: none !important;
+  }
+}
+
+.groupDetail {
+  background-color: #f3f2f3;
+  padding: 20px;
+  // border-radius: 12px;
+}
+
+.member {
+  margin-bottom: 15px;
+}
+
+.membersList {
+  margin-top: 15px;
+}
+
+.memberItem {
+  background-color: #f3f2f3;
+  margin-bottom: 15px;
+}

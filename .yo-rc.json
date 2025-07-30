@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.4",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "sp-groups-management",
+    "libraryId": "7a2fabf6-a3af-42bf-8b4e-dcfa4d06b3cc",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "sp-groups-management",
+    "solutionShortDescription": "sp-groups-management description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

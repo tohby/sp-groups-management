@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sp-groups-management-client-side-solution",
+    "id": "7a2fabf6-a3af-42bf-8b4e-dcfa4d06b3cc",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "sp-groups-management description"
+      },
+      "longDescription": {
+        "default": "sp-groups-management description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "sp-groups-management Feature",
+        "description": "The feature that activates elements of the sp-groups-management solution.",
+        "id": "0b6d4a88-8cac-40fa-98f0-fb6622d395c7",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/sp-groups-management.sppkg"
+  }
+}
